@@ -11,6 +11,18 @@ body {
     background-position: top center;
 }
 
+.day {
+    background-image: url('bg_day.jpeg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.night {
+    background-image: url('bg_night.png');
+    background-size: cover;
+    background-position: top center;
+}
+
 .app-wrap {
     display: flex;
     flex-direction: column;
@@ -35,10 +47,14 @@ header input {
     border-radius: 16px 0px 16px 0px;
     border-bottom: 3px solid #df8e00;
 
-    color: #313131;
+    color: #FFCDB2;
     font-size: 20px;
     font-weight: 300;
     transition: 0.2s ease-out;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFCDB2;
 }
 
 header input:focus {
@@ -55,19 +71,19 @@ main {
 }
 
 .location .city {
-    color: #fff;
+    color: #98C1D9;
     font-size: 32px;
     font-weight: 500;
     margin-bottom: 5px;
 }
 
 .location .date {
-    color: #fff;
+    color: #98C1D9;
     font-size: 16px;
 }
 
 .current .temp {
-    color: #fff;
+    color: #EE6C4D;
     font-size: 102px;
     font-weight: 900;
     margin: 30px 0px;
@@ -79,7 +95,7 @@ main {
 }
 
 .current .weather {
-    color: #fff;
+    color: #98C1D9;
     font-size: 32px;
     font-weight: 700;
     font-style: italic;
@@ -88,7 +104,7 @@ main {
 }
 
 .current .hi-low {
-    color: #fff;
+    color: #98C1D9;
     font-size: 24px;
     font-weight: 500;
     text-shadow: 0px 3px rgba(0, 0, 0, 0.5);
