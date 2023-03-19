@@ -1,5 +1,6 @@
+const key = config.key;
+
 const api = {
-    key: '404f265119d55ba6a0ce9438354bc33d',
     base: 'https://api.openweathermap.org/data/2.5/',
 }
 
@@ -13,7 +14,7 @@ function setQuery(evt) {
 }
 
 function getResults(query) {
-    fetch(`${api.base}weather?q=${query}&units=imperial&APPID=${api.key}`)
+    fetch(`${api.base}weather?q=${query}&units=imperial&APPID=${key}`)
         .then(weather => {
             return weather.json();
         }).then(displayResults);
