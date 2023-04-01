@@ -1,4 +1,4 @@
-const key = config.key;
+const key = '404f265119d55ba6a0ce9438354bc33d';
 
 const api = {
     base: 'https://api.openweathermap.org/data/2.5/',
